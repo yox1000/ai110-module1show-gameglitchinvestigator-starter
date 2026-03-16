@@ -25,13 +25,14 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose: The app is a Streamlit number-guessing game where the player uses higher/lower feedback to find a secret number within a limited number of attempts.
+- [x] Detail which bugs you found: The hint direction was reversed, the secret could be treated as a string and break comparisons, and the attempt counter behavior was off-by-one.
+- [x] Explain what fixes you applied: Core logic was refactored into `logic_utils.py`, hint logic was corrected, unsafe secret-type handling was removed from app flow, and regression tests were added.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [x] Ran the fixed app locally with Streamlit and verified the win flow and hint behavior.
+- [x] Verified test coverage with pytest: `5 passed`.
 
 ## 🚀 Stretch Features
 
